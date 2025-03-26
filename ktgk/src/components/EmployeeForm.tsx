@@ -42,14 +42,16 @@ const EmployeeForm: React.FC<EmployeeFormProps> = ({ visible, onClose, onSave, i
         </Form.Item>
         <Form.Item name="chuc_vu" label="Chức vụ" rules={[{ required: true, message: "Vui lòng chọn chức vụ!" }]}>
           <Select>
-            <Option value="Manager">Manager</Option>
-            <Option value="Staff">Staff</Option>
+            <Option value="Nhân viên">Nhân viên</Option>
+            <Option value="Quản lý">Quản lý</Option>
           </Select>
         </Form.Item>
         <Form.Item name="phong_ban" label="Phòng ban" rules={[{ required: true, message: "Vui lòng chọn phòng ban!" }]}>
           <Select>
-            <Option value="HR">HR</Option>
-            <Option value="IT">IT</Option>
+            <Option value="Hành chính">Hành chính</Option>
+            <Option value="Kinh doanh">Kinh doanh</Option>
+            <Option value="Công nghệ">Công nghệ</Option>
+            <Option value="Nhân sự">Nhân sự</Option>
           </Select>
         </Form.Item>
         <Form.Item name="luong" label="Lương" rules={[{ required: true, message: "Vui lòng nhập lương!" }]}>
