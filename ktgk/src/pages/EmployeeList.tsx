@@ -96,6 +96,8 @@ const EmployeeList: React.FC = () => {
                 <Select placeholder="Lọc theo phòng ban" onChange={(value) => setSelectedDepartment(value)} allowClear style={{ width: 180 }}>
                     <Option value="Hành chính">Hành chính</Option>
                     <Option value="Kinh doanh">Kinh doanh</Option>
+                    <Option value="Công nghệ">Công nghệ</Option>
+                    <Option value="Nhân sự">Nhân sự</Option>
                 </Select>
             </div>
 
